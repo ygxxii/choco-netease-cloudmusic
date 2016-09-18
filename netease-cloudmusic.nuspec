@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>netease-cloudmusic (Install)</title>
+    <title>netease-cloudmusic（网易云音乐） (Install)</title>
     <authors>网易公司</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://music.163.com/</projectUrl>
