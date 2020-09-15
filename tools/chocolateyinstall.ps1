@@ -1,41 +1,15 @@
-﻿
-$ErrorActionPreference = 'Stop';
-
-
-$packageName= 'netease-cloudmusic'
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://s1.music.126.net/download/pc/cloudmusicsetup_2_1_0[145894].exe'
+﻿$ErrorActionPreference = 'Stop'
+$url        = 'https://d1.music.126.net/dmusic/cloudmusicsetup2.7.3.198319.exe'
 
 $packageArgs = @{
-  packageName   = $packageName
-  unzipLocation = $toolsDir
-  fileType      = 'exe'
-  url           = $url
-
-  silentArgs   = '/S'
-  validExitCodes= @(0)
-
-  softwareName  = '网易云音乐*'
-  checksum      = '2e4b619fe37a77b5ca57bf74660bd6f9'
-  checksumType  = 'md5'
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'exe'
+  url            = $url
+  softwareName   = 'cloudmusicsetup*'
+  checksum       = '8f352e1afb7fec2f988193e31aef0c93ff44750799d79baa362fb01fa58c95ee'
+  checksumType   = 'sha256'
+  silentArgs     = '/S'
+  validExitCodes = @(0)
 }
 
 Install-ChocolateyPackage @packageArgs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
