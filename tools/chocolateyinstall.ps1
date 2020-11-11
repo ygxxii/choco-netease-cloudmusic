@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
-$url        = 'https://d1.music.126.net/dmusic/cloudmusicsetup2.7.3.198319.exe'
+$url        = 'https://d1.music.126.net/dmusic/cloudmusicsetup2.7.4.198374.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
   url            = $url
   softwareName   = 'cloudmusicsetup*'
-  checksum       = '8f352e1afb7fec2f988193e31aef0c93ff44750799d79baa362fb01fa58c95ee'
+  checksum       = '6d337d40f88ff63eefa20de8f895d8ac99b25092176df4f19782911488fbef71'
   checksumType   = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
